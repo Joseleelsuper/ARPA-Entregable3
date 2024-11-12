@@ -1,3 +1,4 @@
+// Padre.cpp
 #include <mpi.h>  
 #include <iostream>  
  
@@ -17,7 +18,7 @@ int main(int argc, char* argv[]) {
    double start_time = MPI_Wtime();
 
    if (rank == RANK_MASTER) { 
-       printf("\n<<PADRE>> Soy el padre y crearé hijos.\n");
+       printf("\n<<PADRE>> Soy el padre y crearï¿½ hijos.\n");
 
        MPI_Comm intercom;  
        MPI_Comm_spawn(
@@ -41,13 +42,13 @@ int main(int argc, char* argv[]) {
 }
 
 /*
- #include <mpi.h>
+#include <mpi.h>
 #include <iostream>
 
 int main(int argc, char* argv[]) {
    MPI_Init(&argc, &argv);
 
-   int numHijos = 4; // Número de procesos hijo a lanzar
+   int numHijos = 4; // Nï¿½mero de procesos hijo a lanzar
    MPI_Comm intercom;
 
    // Convertir el nombre del programa hijo a char*
